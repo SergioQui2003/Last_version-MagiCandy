@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NovedadProducto.css">
+    <title>Registrar Novedad</title>
+</head>
+<body>
+    <form>
+        <div class="text writing">
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre Del Producto</label>
+            <span></span>
+        </div>
+
+        <div class="password writing">
+            <input type="text" id="contrasena" name="contrasena">
+            <label for="contrasena">Código Del Producto</label>
+            <span></span>
+        </div>
+
+        <div class="textarea writing">
+            <textarea id="comentarios" name="comentarios"></textarea>
+            <label for="comentarios">Descripción de Novedad</label>
+            <span></span>
+        </div>
+
+        <div class="number">
+            <label class="titulo">Unidades Afectadas</label>
+            <div class="numero">
+                <label for="numero" class="decrement" onclick="decrementValue(this)"><svg viewBox="0 0 448 512" fill="white"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></label>
+                <input type="number" id="numero" name="numero" min="0" max="9999999">
+                <label for="numero" class="increment" onclick="incrementValue(this)"><svg viewBox="0 0 448 512" fill="white"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></label>
+            </div>
+        </div>
+
+        <div class="date">
+            <label class="titulo">Fecha de Novedad</label>
+            <div class="fecha">
+                <input type="date" id="fecha" name="fecha">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="checkbox">
+        <label>
+            <input type="checkbox" name="Entregar a domicilio" value="opcion1">
+            <div class="view"><span><svg viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></div> Vencimiento
+        </label>
+        <label>
+            <input type="checkbox" name="Recogen fisico" value="opcion2">
+            <div class="view"><span><svg viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></div> Daño
+        </label>
+        <label>
+            <input type="checkbox" name="Recogen fisico" value="opcion2">
+            <div class="view"><span><svg viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></div> Otro
+        </label>
+        </div>
+
+        <div class="guardar">
+            <input type="submit" value="GUARDAR">
+        </div>
+    </form>
+</body>
+</html>
